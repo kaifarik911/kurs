@@ -1,0 +1,44 @@
+\hypertarget{data_8h_source}{}\doxysection{data.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}error.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classDataHandler}{DataHandler}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{classDataHandler_ac58f343d11932e3dec3849680f62b29b}{DataHandler}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&config\_path, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&input\_path, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&output\_path);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{38     array<string, 2> \mbox{\hyperlink{classDataHandler_ab5e14da3f152abceec2c4d70b61b1a2f}{loadConfig}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{46     vector<vector<double>> \mbox{\hyperlink{classDataHandler_a2bb1ed55faee8073457a46a7bdee54c7}{readData}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{classDataHandler_a1a46e205874a63c7ebc8bf12f04e1343}{writeData}}(\textcolor{keyword}{const} vector<double> \&data) \textcolor{keyword}{const};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classDataHandler_a917fa0d7c4156eb9efee99aa1872218b}{getConfigPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classDataHandler_aa74e280d2ea5654a8061e85a5ced5ec0}{getInputPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{75     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classDataHandler_a72f40acd5ab15948f775a12cb68628fa}{getOutputPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{keyword}{private}:}
+\DoxyCodeLine{78     \textcolor{keywordtype}{string} config\_path; }
+\DoxyCodeLine{79     \textcolor{keywordtype}{string} input\_path;  }
+\DoxyCodeLine{80     \textcolor{keywordtype}{string} output\_path; }
+\DoxyCodeLine{81 \};}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{88 \textcolor{keywordtype}{void} PrintVector(\textcolor{keyword}{const} vector<double> \&data);}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{95 \textcolor{keywordtype}{void} PrintVectors(\textcolor{keyword}{const} vector<vector<double>> \&data);}
+
+\end{DoxyCode}

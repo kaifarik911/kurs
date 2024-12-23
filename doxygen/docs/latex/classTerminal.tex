@@ -1,0 +1,154 @@
+\hypertarget{classTerminal}{}\doxysection{Класс Terminal}
+\label{classTerminal}\index{Terminal@{Terminal}}
+
+
+Класс для работы с параметрами командной строки и конфигурацией.  
+
+
+
+
+{\ttfamily \#include $<$terminal.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTerminal_aa448509b5aa1ece53c3d86385655be0e}{Terminal}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classTerminal}{Terminal}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTerminal_a1f091bd8ef5875588bb6684a016013f7}{get\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает адрес сервера. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTerminal_a2bd7e2bbd0b865c01b1cd8216a63e37b}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает порт сервера. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTerminal_ad29c07129e0954f780172480cf8f2560}{get\+Input\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к входному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTerminal_af9e4bebd3fe7e0fc381928bde5463451}{get\+Output\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к выходному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTerminal_a6b945b0e5e291dd54f20b7f6ada8e36e}{get\+Config\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к файлу конфигурации. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTerminal_a6f46c94310b945480e12b835969fa15d}{parse\+Args}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Разбирает аргументы командной строки и устанавливает соответствующие параметры. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTerminal_a56105434920b8741032077fbfd59d0b2}{show\+Help}} () const
+\begin{DoxyCompactList}\small\item\em Показывает справочную информацию. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с параметрами командной строки и конфигурацией. 
+
+Этот класс предоставляет методы для разбора аргументов командной строки, получения параметров конфигурации и отображения справки. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classTerminal_aa448509b5aa1ece53c3d86385655be0e}\label{classTerminal_aa448509b5aa1ece53c3d86385655be0e}} 
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{Terminal()}{Terminal()}}
+{\footnotesize\ttfamily Terminal\+::\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classTerminal}{Terminal}}. 
+
+Устанавливает значения по умолчанию для адреса сервера, порта и пути к файлу конфигурации. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classTerminal_a1f091bd8ef5875588bb6684a016013f7}\label{classTerminal_a1f091bd8ef5875588bb6684a016013f7}} 
+\index{Terminal@{Terminal}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily string Terminal\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает адрес сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTerminal_a6b945b0e5e291dd54f20b7f6ada8e36e}\label{classTerminal_a6b945b0e5e291dd54f20b7f6ada8e36e}} 
+\index{Terminal@{Terminal}!getConfigPath@{getConfigPath}}
+\index{getConfigPath@{getConfigPath}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{getConfigPath()}{getConfigPath()}}
+{\footnotesize\ttfamily string Terminal\+::get\+Config\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTerminal_ad29c07129e0954f780172480cf8f2560}\label{classTerminal_ad29c07129e0954f780172480cf8f2560}} 
+\index{Terminal@{Terminal}!getInputPath@{getInputPath}}
+\index{getInputPath@{getInputPath}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{getInputPath()}{getInputPath()}}
+{\footnotesize\ttfamily string Terminal\+::get\+Input\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к входному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTerminal_af9e4bebd3fe7e0fc381928bde5463451}\label{classTerminal_af9e4bebd3fe7e0fc381928bde5463451}} 
+\index{Terminal@{Terminal}!getOutputPath@{getOutputPath}}
+\index{getOutputPath@{getOutputPath}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{getOutputPath()}{getOutputPath()}}
+{\footnotesize\ttfamily string Terminal\+::get\+Output\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к выходному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTerminal_a2bd7e2bbd0b865c01b1cd8216a63e37b}\label{classTerminal_a2bd7e2bbd0b865c01b1cd8216a63e37b}} 
+\index{Terminal@{Terminal}!getPort@{getPort}}
+\index{getPort@{getPort}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int Terminal\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает порт сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTerminal_a6f46c94310b945480e12b835969fa15d}\label{classTerminal_a6f46c94310b945480e12b835969fa15d}} 
+\index{Terminal@{Terminal}!parseArgs@{parseArgs}}
+\index{parseArgs@{parseArgs}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{parseArgs()}{parseArgs()}}
+{\footnotesize\ttfamily void Terminal\+::parse\+Args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Разбирает аргументы командной строки и устанавливает соответствующие параметры. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Массив аргументов командной строки. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если отсутствует значение для параметра или обнаружен неизвестный параметр. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTerminal_a56105434920b8741032077fbfd59d0b2}\label{classTerminal_a56105434920b8741032077fbfd59d0b2}} 
+\index{Terminal@{Terminal}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!Terminal@{Terminal}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily void Terminal\+::show\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Показывает справочную информацию. 
+
+Выводит справочное сообщение о доступных параметрах командной строки. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+terminal.\+h\item 
+terminal.\+cpp\end{DoxyCompactItemize}

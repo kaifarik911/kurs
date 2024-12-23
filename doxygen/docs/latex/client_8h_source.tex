@@ -1,0 +1,50 @@
+\hypertarget{client_8h_source}{}\doxysection{client.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#define CRYPTOPP\_ENABLE\_NAMESPACE\_WEAK 1}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}error.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <sys/socket.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <arpa/inet.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <cryptopp/hex.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <cryptopp/md5.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <cryptopp/osrng.h>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{21 \textcolor{keyword}{using namespace }CryptoPP;}
+\DoxyCodeLine{22 \textcolor{keyword}{using namespace }CryptoPP::Weak1;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{classClient}{Client}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{40     \mbox{\hyperlink{classClient_a66adc90d431a7a33a8ab3151d1075c6d}{Client}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&address, uint16\_t port);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a484b660517d6a610b6733bee7e96cb8c}{connectToServer}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a770709323feaf017943e9761816e714b}{authenticate}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&username, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&password);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{65     vector<double> \mbox{\hyperlink{classClient_a653eebeed7dca9125bc37a0a33c5217e}{calculate}}(\textcolor{keyword}{const} vector<vector<double>> \&data);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a450bc799e79d4a2ef239341b323d38a2}{closeConnection}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{77     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classClient_a84c8d01ab0375f939f69e34759bec820}{getAddress}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{84     uint16\_t \mbox{\hyperlink{classClient_a75595f6310f4055351e1067fcd5e4aa5}{getPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{private}:}
+\DoxyCodeLine{87     \textcolor{keywordtype}{string} address\_; }
+\DoxyCodeLine{88     uint16\_t port\_;  }
+\DoxyCodeLine{89     \textcolor{keywordtype}{int} socket\_;     }
+\DoxyCodeLine{90 \};}
+
+\end{DoxyCode}

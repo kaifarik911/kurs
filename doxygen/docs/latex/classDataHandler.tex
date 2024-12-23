@@ -1,0 +1,159 @@
+\hypertarget{classDataHandler}{}\doxysection{Класс Data\+Handler}
+\label{classDataHandler}\index{DataHandler@{DataHandler}}
+
+
+Класс для работы с данными.  
+
+
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataHandler_ac58f343d11932e3dec3849680f62b29b}{Data\+Handler}} (const string \&config\+\_\+path, const string \&input\+\_\+path, const string \&output\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classDataHandler}{Data\+Handler}}. \end{DoxyCompactList}\item 
+array$<$ string, 2 $>$ \mbox{\hyperlink{classDataHandler_ab5e14da3f152abceec2c4d70b61b1a2f}{load\+Config}} () const
+\begin{DoxyCompactList}\small\item\em Загружает конфигурационные данные из файла. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classDataHandler_a2bb1ed55faee8073457a46a7bdee54c7}{read\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Читает данные из входного файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDataHandler_a1a46e205874a63c7ebc8bf12f04e1343}{write\+Data}} (const vector$<$ double $>$ \&data) const
+\begin{DoxyCompactList}\small\item\em Записывает данные в выходной файл. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classDataHandler_a917fa0d7c4156eb9efee99aa1872218b}{get\+Config\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к файлу конфигурации. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classDataHandler_aa74e280d2ea5654a8061e85a5ced5ec0}{get\+Input\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к входному файлу. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classDataHandler_a72f40acd5ab15948f775a12cb68628fa}{get\+Output\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к выходному файлу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с данными. 
+
+Этот класс предоставляет методы для загрузки конфигурации, чтения и записи данных. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classDataHandler_ac58f343d11932e3dec3849680f62b29b}\label{classDataHandler_ac58f343d11932e3dec3849680f62b29b}} 
+\index{DataHandler@{DataHandler}!DataHandler@{DataHandler}}
+\index{DataHandler@{DataHandler}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{DataHandler()}{DataHandler()}}
+{\footnotesize\ttfamily Data\+Handler\+::\+Data\+Handler (\begin{DoxyParamCaption}\item[{const string \&}]{config\+\_\+path,  }\item[{const string \&}]{input\+\_\+path,  }\item[{const string \&}]{output\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classDataHandler}{Data\+Handler}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em config\+\_\+path} & Путь к файлу конфигурации. \\
+\hline
+{\em input\+\_\+path} & Путь к входному файлу. \\
+\hline
+{\em output\+\_\+path} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classDataHandler_a917fa0d7c4156eb9efee99aa1872218b}\label{classDataHandler_a917fa0d7c4156eb9efee99aa1872218b}} 
+\index{DataHandler@{DataHandler}!getConfigPath@{getConfigPath}}
+\index{getConfigPath@{getConfigPath}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{getConfigPath()}{getConfigPath()}}
+{\footnotesize\ttfamily const string \& Data\+Handler\+::get\+Config\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataHandler_aa74e280d2ea5654a8061e85a5ced5ec0}\label{classDataHandler_aa74e280d2ea5654a8061e85a5ced5ec0}} 
+\index{DataHandler@{DataHandler}!getInputPath@{getInputPath}}
+\index{getInputPath@{getInputPath}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{getInputPath()}{getInputPath()}}
+{\footnotesize\ttfamily const string \& Data\+Handler\+::get\+Input\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к входному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataHandler_a72f40acd5ab15948f775a12cb68628fa}\label{classDataHandler_a72f40acd5ab15948f775a12cb68628fa}} 
+\index{DataHandler@{DataHandler}!getOutputPath@{getOutputPath}}
+\index{getOutputPath@{getOutputPath}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{getOutputPath()}{getOutputPath()}}
+{\footnotesize\ttfamily const string \& Data\+Handler\+::get\+Output\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к выходному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDataHandler_ab5e14da3f152abceec2c4d70b61b1a2f}\label{classDataHandler_ab5e14da3f152abceec2c4d70b61b1a2f}} 
+\index{DataHandler@{DataHandler}!loadConfig@{loadConfig}}
+\index{loadConfig@{loadConfig}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{loadConfig()}{loadConfig()}}
+{\footnotesize\ttfamily array$<$ string, 2 $>$ Data\+Handler\+::load\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Загружает конфигурационные данные из файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Массив строк, содержащий логин и пароль. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если не удалось открыть файл конфигурации или отсутствует логин или пароль. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDataHandler_a2bb1ed55faee8073457a46a7bdee54c7}\label{classDataHandler_a2bb1ed55faee8073457a46a7bdee54c7}} 
+\index{DataHandler@{DataHandler}!readData@{readData}}
+\index{readData@{readData}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ Data\+Handler\+::read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Читает данные из входного файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Вектор векторов данных. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если не удалось открыть входной файл или произошла ошибка чтения данных. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classDataHandler_a1a46e205874a63c7ebc8bf12f04e1343}\label{classDataHandler_a1a46e205874a63c7ebc8bf12f04e1343}} 
+\index{DataHandler@{DataHandler}!writeData@{writeData}}
+\index{writeData@{writeData}!DataHandler@{DataHandler}}
+\doxysubsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily void Data\+Handler\+::write\+Data (\begin{DoxyParamCaption}\item[{const vector$<$ double $>$ \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+Записывает данные в выходной файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор данных для записи. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}} & Если не удалось открыть выходной файл или произошла ошибка записи данных. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+data.\+h\item 
+data.\+cpp\end{DoxyCompactItemize}

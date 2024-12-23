@@ -1,0 +1,60 @@
+\hypertarget{classRuntimeError}{}\doxysection{Класс Runtime\+Error}
+\label{classRuntimeError}\index{RuntimeError@{RuntimeError}}
+
+
+Класс для обработки ошибок времени выполнения.  
+
+
+
+
+{\ttfamily \#include $<$error.\+h$>$}
+
+
+
+Граф наследования\+:Runtime\+Error\+:
+% FIG 0
+
+
+Граф связей класса Runtime\+Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRuntimeError_a3e0200b78e547654c32a2728de71f88a}{Runtime\+Error}} (const string \&message, const string \&func)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки ошибок времени выполнения. 
+
+Этот класс используется для создания исключений, связанных с ошибками времени выполнения. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classRuntimeError_a3e0200b78e547654c32a2728de71f88a}\label{classRuntimeError_a3e0200b78e547654c32a2728de71f88a}} 
+\index{RuntimeError@{RuntimeError}!RuntimeError@{RuntimeError}}
+\index{RuntimeError@{RuntimeError}!RuntimeError@{RuntimeError}}
+\doxysubsubsection{\texorpdfstring{RuntimeError()}{RuntimeError()}}
+{\footnotesize\ttfamily Runtime\+Error\+::\+Runtime\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{message,  }\item[{const string \&}]{func }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classRuntimeError}{Runtime\+Error}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой произошла ошибка. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em runtime\+\_\+error} & Всегда выбрасывает исключение с сообщением об ошибке и именем функции. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+error.\+h\item 
+error.\+cpp\end{DoxyCompactItemize}

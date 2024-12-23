@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ClientDoubleMD5: Исходный файл data.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ClientDoubleMD5
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">data.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;error.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classDataHandler.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classDataHandler.html">DataHandler</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classDataHandler.html#ac58f343d11932e3dec3849680f62b29b">DataHandler</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;config_path, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;input_path, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;output_path);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    array&lt;string, 2&gt; <a class="code hl_function" href="classDataHandler.html#ab5e14da3f152abceec2c4d70b61b1a2f">loadConfig</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    vector&lt;vector&lt;double&gt;&gt; <a class="code hl_function" href="classDataHandler.html#a2bb1ed55faee8073457a46a7bdee54c7">readData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDataHandler.html#a1a46e205874a63c7ebc8bf12f04e1343">writeData</a>(<span class="keyword">const</span> vector&lt;double&gt; &amp;data) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;<a class="code hl_function" href="classDataHandler.html#a917fa0d7c4156eb9efee99aa1872218b">getConfigPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;<a class="code hl_function" href="classDataHandler.html#aa74e280d2ea5654a8061e85a5ced5ec0">getInputPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;<a class="code hl_function" href="classDataHandler.html#a72f40acd5ab15948f775a12cb68628fa">getOutputPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">string</span> config_path; </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">string</span> input_path;  </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">string</span> output_path; </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">void</span> PrintVector(<span class="keyword">const</span> vector&lt;double&gt; &amp;data);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> PrintVectors(<span class="keyword">const</span> vector&lt;vector&lt;double&gt;&gt; &amp;data);</div>
+<div class="ttc" id="aclassDataHandler_html"><div class="ttname"><a href="classDataHandler.html">DataHandler</a></div><div class="ttdoc">Класс для работы с данными.</div><div class="ttdef"><b>Definition:</b> data.h:21</div></div>
+<div class="ttc" id="aclassDataHandler_html_a1a46e205874a63c7ebc8bf12f04e1343"><div class="ttname"><a href="classDataHandler.html#a1a46e205874a63c7ebc8bf12f04e1343">DataHandler::writeData</a></div><div class="ttdeci">void writeData(const vector&lt; double &gt; &amp;data) const</div><div class="ttdoc">Записывает данные в выходной файл.</div><div class="ttdef"><b>Definition:</b> data.cpp:70</div></div>
+<div class="ttc" id="aclassDataHandler_html_a2bb1ed55faee8073457a46a7bdee54c7"><div class="ttname"><a href="classDataHandler.html#a2bb1ed55faee8073457a46a7bdee54c7">DataHandler::readData</a></div><div class="ttdeci">vector&lt; vector&lt; double &gt; &gt; readData() const</div><div class="ttdoc">Читает данные из входного файла.</div><div class="ttdef"><b>Definition:</b> data.cpp:39</div></div>
+<div class="ttc" id="aclassDataHandler_html_a72f40acd5ab15948f775a12cb68628fa"><div class="ttname"><a href="classDataHandler.html#a72f40acd5ab15948f775a12cb68628fa">DataHandler::getOutputPath</a></div><div class="ttdeci">const string &amp; getOutputPath() const</div><div class="ttdoc">Возвращает путь к выходному файлу.</div><div class="ttdef"><b>Definition:</b> data.cpp:100</div></div>
+<div class="ttc" id="aclassDataHandler_html_a917fa0d7c4156eb9efee99aa1872218b"><div class="ttname"><a href="classDataHandler.html#a917fa0d7c4156eb9efee99aa1872218b">DataHandler::getConfigPath</a></div><div class="ttdeci">const string &amp; getConfigPath() const</div><div class="ttdoc">Возвращает путь к файлу конфигурации.</div><div class="ttdef"><b>Definition:</b> data.cpp:90</div></div>
+<div class="ttc" id="aclassDataHandler_html_aa74e280d2ea5654a8061e85a5ced5ec0"><div class="ttname"><a href="classDataHandler.html#aa74e280d2ea5654a8061e85a5ced5ec0">DataHandler::getInputPath</a></div><div class="ttdeci">const string &amp; getInputPath() const</div><div class="ttdoc">Возвращает путь к входному файлу.</div><div class="ttdef"><b>Definition:</b> data.cpp:95</div></div>
+<div class="ttc" id="aclassDataHandler_html_ab5e14da3f152abceec2c4d70b61b1a2f"><div class="ttname"><a href="classDataHandler.html#ab5e14da3f152abceec2c4d70b61b1a2f">DataHandler::loadConfig</a></div><div class="ttdeci">array&lt; string, 2 &gt; loadConfig() const</div><div class="ttdoc">Загружает конфигурационные данные из файла.</div><div class="ttdef"><b>Definition:</b> data.cpp:13</div></div>
+<div class="ttc" id="aclassDataHandler_html_ac58f343d11932e3dec3849680f62b29b"><div class="ttname"><a href="classDataHandler.html#ac58f343d11932e3dec3849680f62b29b">DataHandler::DataHandler</a></div><div class="ttdeci">DataHandler(const string &amp;config_path, const string &amp;input_path, const string &amp;output_path)</div><div class="ttdoc">Конструктор класса DataHandler.</div><div class="ttdef"><b>Definition:</b> data.cpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

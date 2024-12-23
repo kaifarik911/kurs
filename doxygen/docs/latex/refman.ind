@@ -1,0 +1,87 @@
+\begin{theindex}
+
+  \item {authenticate}
+    \subitem {Client}, \hyperpage{9}
+
+  \indexspace
+
+  \item {calculate}
+    \subitem {Client}, \hyperpage{9}
+  \item {Client}, \hyperpage{7}
+    \subitem {authenticate}, \hyperpage{9}
+    \subitem {calculate}, \hyperpage{9}
+    \subitem {Client}, \hyperpage{7}
+    \subitem {connectToServer}, \hyperpage{10}
+    \subitem {getAddress}, \hyperpage{10}
+    \subitem {getPort}, \hyperpage{10}
+  \item {connectToServer}
+    \subitem {Client}, \hyperpage{10}
+
+  \indexspace
+
+  \item {DataHandler}, \hyperpage{10}
+    \subitem {DataHandler}, \hyperpage{11}
+    \subitem {getConfigPath}, \hyperpage{11}
+    \subitem {getInputPath}, \hyperpage{12}
+    \subitem {getOutputPath}, \hyperpage{12}
+    \subitem {loadConfig}, \hyperpage{12}
+    \subitem {readData}, \hyperpage{13}
+    \subitem {writeData}, \hyperpage{13}
+
+  \indexspace
+
+  \item {getAddress}
+    \subitem {Client}, \hyperpage{10}
+    \subitem {Terminal}, \hyperpage{14}
+  \item {getConfigPath}
+    \subitem {DataHandler}, \hyperpage{11}
+    \subitem {Terminal}, \hyperpage{15}
+  \item {getInputPath}
+    \subitem {DataHandler}, \hyperpage{12}
+    \subitem {Terminal}, \hyperpage{15}
+  \item {getOutputPath}
+    \subitem {DataHandler}, \hyperpage{12}
+    \subitem {Terminal}, \hyperpage{15}
+  \item {getPort}
+    \subitem {Client}, \hyperpage{10}
+    \subitem {Terminal}, \hyperpage{15}
+
+  \indexspace
+
+  \item {loadConfig}
+    \subitem {DataHandler}, \hyperpage{12}
+
+  \indexspace
+
+  \item {parseArgs}
+    \subitem {Terminal}, \hyperpage{16}
+
+  \indexspace
+
+  \item {readData}
+    \subitem {DataHandler}, \hyperpage{13}
+  \item {RuntimeError}, \hyperpage{13}
+
+  \indexspace
+
+  \item {showHelp}
+    \subitem {Terminal}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Terminal}, \hyperpage{14}
+    \subitem {getAddress}, \hyperpage{14}
+    \subitem {getConfigPath}, \hyperpage{15}
+    \subitem {getInputPath}, \hyperpage{15}
+    \subitem {getOutputPath}, \hyperpage{15}
+    \subitem {getPort}, \hyperpage{15}
+    \subitem {parseArgs}, \hyperpage{16}
+    \subitem {showHelp}, \hyperpage{16}
+    \subitem {Terminal}, \hyperpage{14}
+
+  \indexspace
+
+  \item {writeData}
+    \subitem {DataHandler}, \hyperpage{13}
+
+\end{theindex}
